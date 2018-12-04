@@ -1,0 +1,21 @@
+$white: #ffffff;
+$drum-panel:#060608;
+$grid:#404040;
+$grid-sha:#232122;
+$drum-panel-off:#505F47;
+$drum-panel-on:#058CF7;
+$drum-sha:#B6B1B3;
+
+$grid-height: 300px;
+
+#drum-machine {
+    background: $drum-panel;
+
+    #grids {
+        height: $grid-height;
+    }
+
+    #controller {
+        background-color: $drum-panel;
+    }
+}
