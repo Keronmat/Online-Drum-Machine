@@ -1,0 +1,28 @@
+{
+  "name": "drummachine",
+  "version": "1.0.0",
+  "description": "An application you can use to learn to play the drums online",
+  "main": "index.html",
+  "scripts": {
+    "start": "npm run lite",
+    "lite": "lite-server",
+    "scss": "node-sass -o css/ css/",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Keronmat/Online-Drum-Machine.git"
+  },
+  "author": "KMatthews",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Keronmat/Online-Drum-Machine/issues"
+  },
+  "homepage": "https://github.com/Keronmat/Online-Drum-Machine#readme",
+  "devDependencies": {
+    "lite-server": "^2.4.0",
+    "node-sass": "^4.7.2",
+    "onchange": "^3.3.0",
+    "parallelshell": "^3.0.2"
+  }
+}

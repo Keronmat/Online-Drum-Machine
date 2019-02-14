@@ -1,0 +1,65 @@
+$white: #ffffff;
+$drum-panel: #060608;
+$grid: #404040;
+$grid-sha: #232122;
+$drum-panel-off: #505f47;
+$drum-panel-on: #058cf7;
+$drum-sha: #b6b1b3;
+
+$drum-height: 150px;
+$drum-width: 150px;
+
+section {
+  margin: 0 auto;
+  padding: 0;
+  font-family: verdana;
+  background-color: floralwhite;
+  position: relative;
+}
+
+#main-drum {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 150px 150px;
+  grid-column-gap: 10px;
+  grid-row-gap: 15px;
+  justify-items: stretch;
+  align-items: stretch;
+  justify-content: center;
+  align-content: center;
+
+  .drum-key {
+    height: $drum-height;
+    width: $drum-width;
+    background-color: $grid;
+    margin: 1 rem;
+    border: solid 1px #7E7361;
+    border-radius: 3px;
+    padding: 10px;
+    transition: 0.07s;
+    text-align: center;
+    color: white;
+    text-shadow: 5 0 5px black;
+
+    kbd {
+      font-size: 50px;
+      display: block;
+      text-transform: capitalize;
+    }
+
+    .sound {
+      font-size: 1.2rem;
+      text-transform: capitalize;
+      color: green;
+      display: block;
+    }
+  }
+
+}
+
+.playing {
+  transform: scale(1.1);
+  color: blue;
+  border-color: green;
+  box-shadow: 0 0 20px blue;
+}
