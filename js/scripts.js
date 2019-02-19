@@ -2,13 +2,16 @@ const checkbox = document.getElementById("cmn-toggle-1");
 
 checkbox.addEventListener("change", function() {
   const mainDrum = document.querySelector("#main-drum");
+  const onOffHeader = document.querySelector(".onOffHeader");
+
   if (this.checked) {
     mainDrum.classList.remove("main-drumOff");
     mainDrum.classList.add("main-drumOn");
-    //document.querySelectorAll("kbd").classList.add("kbd-on");
+    onOffHeader.innerHTML = "On";
   } else {
     mainDrum.classList.remove("main-drumOn");
     mainDrum.classList.add("main-drumOff");
+    onOffHeader.innerHTML = "Off";
   }
 });
 
@@ -33,7 +36,7 @@ const keys = Array.from(document.querySelectorAll(".drum-key"));
 keys.forEach(key => key.addEventListener("transitionend", removeTransition));
 //window.addEventListener("keydown", playSound);
 
-//trying clicks
+//listening for clicks
 keys.forEach(el => {
   el.addEventListener("click", () => {
     const audioKey = el.getAttribute("data-key");
@@ -47,7 +50,7 @@ keys.forEach(el => {
   });
 });
 
-//tring clicks
+//listening for keydown
 ["mousedown", "keydown", "onclick"].forEach(e => {
   window.addEventListener(e, playSound);
 });

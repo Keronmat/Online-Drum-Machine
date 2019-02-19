@@ -99,7 +99,7 @@ kbd {
 .kbd-on {
   color: #00ff00;
 }
-#on-off {
+h3 {
   color: #ffffff;
   text-transform: capitalize;
   margin: 0 auto;
